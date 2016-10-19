@@ -1,6 +1,7 @@
 ﻿# Личный проект «Седона»
 
-* Студент: [Галина Борисова](https://up.htmlacademy.ru/htmlcss/15/user/235021).
+* Студент: [Галина Борисова](https://up.htmlacademy.ru/htmlcss/15/user/235021)
+* Наставник: `Никита Рогатнев`(https://htmlacademy.ru/profile/id86119).
 
 ---
 
