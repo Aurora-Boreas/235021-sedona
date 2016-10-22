@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Седона</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'> 
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-  </body>
+<body>
+    <div class="main-container">
+        <!-- begin header  -->
+        <header class="main-header">
+        	 <a class="logo" href="index.html"><img src="img/logo.png" alt="City of Sedona"></a>
+            <!-- begin nav  -->
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Фото и видео</a></li>
+                    <li><a href="#">Карта штата</a></li>
+                    <li><a href="hotels.html">Гостиницы</a></li>
+                </ul>
+            </nav>
+            <!-- end nav -->
+        </header>
+        <!-- end header -->
+
+        <!-- begin main  -->
+        <main>
+            <!-- begin main-poster  -->
+            <section class="main-poster"> 
+            	<img src="img/main-poster.jpg" alt="Welcome to the gorgeous Sedona" width="1200" height="501">
+                <div class="slogan slogan-welcome">Welcome to the gorgeous</div>
+                <div class="slogan slogan-sedona">Sedona</div>
+                <blockquote class="slogan slogan-quote">Because the Grand Canyon sucks!</blockquote>
+            </section>
+            <!-- end main-poster -->
+
+            <!-- begin intro  -->
+            <section class="intro">
+                <h1>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h1>
+                <span>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</span>
+            </section>
+            <!-- end intro -->
+
+            <!-- begin features 1 -->
+            <section class="features">
+                <div class="features left" >
+                	<span>Настоящий городок</span>
+                	<span>&mdash;&nbsp;&#8470;1&nbsp;&mdash;</span>
+                	<span>Седона не аттракцион для туристов, там течет своя жизнь</span>
+                </div>
+                <div class="features-content right"> 
+                	<img src="img/photo-r1.jpg" alt="Настоящий городок" width="800" height="400">
+                </div>
+            </section>
+            <!-- end section ??? -->
+
+            <!-- begin description 1 -->
+            <section class="description">
+                <ul>
+                    <li class="description-content column">
+                        <h2>Жилье</h2>
+                        <span>Рекомендуем пожить в настоящем мотеле, все как в кино!</span>
+                    </li>
+                    <li class="description-content column">
+                        <h2>Еда</h2>
+                        <span>Всегда заказывайте фирменный бургер, Вы&nbsp;не&nbsp;разочаруетесь!</span>
+                    </li>
+                    <li class="description-content column">
+                        <h2>Сувениры</h2>
+                        <span>Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</span>
+                    </li>
+                </ul>
+            </section>
+            <!-- end description 1 -->
+
+            <!-- begin features 2 -->
+            <section class="features">
+                <div class="features-content left">
+                	<img src="img/photo-r2.jpg" width="800" height="400" alt="Мост дьявола">
+                </div>
+                <div class="features-content right"> 
+                	<span>Там есть мост дьявола</span>
+                	<span>&mdash;&nbsp;&#8470;2&nbsp;&mdash;</span>
+                	<span>Да, по нему можно пройти! Если, конечно, вы осмелитесь</span>
+                </div>
+            </section>
+            <!-- end features 2 -->
+
+            <!-- begin description 2 -->
+            <section class="description">
+                <ul>
+                    <li class="description-content column" >
+                        <h2>Небольшая площадь</h2>
+                        <span>&mdash;&nbsp;&#8470;3&nbsp;&mdash;</span>
+                        <span>Все достопримечательности находятся очень близко</span>
+                    </li>
+                    <li class="description-content column">
+                        <h2>Красивая дорога</h2>
+                        <span>&mdash;&nbsp;&#8470;4&nbsp;&mdash;</span>
+                        <span>Ехать в Cедону из Лас-Вегаса совсем не скучно!</span>
+                    </li>
+                    <li class="description-content column">
+                        <h2>Мало туристов</h2>
+                        <span>&mdash;&nbsp;&#8470;5&nbsp;&mdash;</span>
+                        <span>Большинство едет в Гранд Каньон и толпится там</span>
+                    </li>
+                </ul>
+            </section>
+            <!-- end description 2 -->
+
+            <!-- begin choose-hotel  -->
+            <section class="choose-hotel">
+                <h2>Заинтересовались?</h2>
+                <span>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Cедоне</span>
+                <a href="#">Поиск гостиницы в Седоне</a>
+            </section>
+            <!-- end choose-hotel -->
+
+            <!-- begin map  -->
+            <section class="map">
+                <iframe src="" width="1200" height="593" allowfullscreen></iframe>
+            </section>
+            <!-- end map -->
+        </main>
+        <!-- end main -->
+
+        <!-- begin footer  -->
+        <footer class="main-footer">
+            <div class="footer-hashtag column"> <a href="#">#visitsedona</a> </div>
+            <div class="footer-socials  column">
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </div>
+            <div  class="footer-copyright column">
+            	<span>website by</span>
+            	<a href="https://htmlacademy.ru/">logo-htmlacademy</a>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+</body>
+
 </html>
