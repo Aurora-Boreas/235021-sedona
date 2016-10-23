@@ -10,35 +10,37 @@
 </head>
 <body>
 	<div class="main-container">
-        <!-- begin header  -->
+        <!-- begin header  -->        
         <header class="main-header">
-        	<a class="logo" href="index.html"><img src="img/logo.png" alt="City of Sedona"></a>
-        	<!-- begin nav  -->        
-        	<nav class="main-navigation">
-        		<ul>
-        			<li>
-        				<a href="#">Информация</a>
-        			</li>
-        			<li>
-        				<a href="#">Фото и видео</a>
-        			</li>
-        			<li>
-        				<a href="#">Карта штата</a>
-        			</li>
-        			<li>
-        				<a href="hotels.html">Гостиницы</a>
-        			</li>
-        		</ul>
-        	</nav>
-        	<!-- end nav -->
+            <a class="logo" href="index.html">
+                <img src="img/logo.png" alt="City of Sedona">
+            </a>
+            <!-- begin nav  -->        
+            <nav class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Фото и видео</a>
+                    </li>
+                    <li>
+                        <a href="#">Карта штата</a>
+                    </li>
+                    <li>
+                        <a href="hotels.html">Гостиницы</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- end nav --> 
         </header>
-        <!-- end header -->
+        <!-- end header -->        
 		
        	<!-- begin filters  -->       	
        	<section class="filters">
        		<form class="filters row" action="/filter" method="post">
        			<fieldset class="options">
-       				<h2 class="filter-title">Инфраструктура:</h2>
+       				<h4 class="filter-title">Инфраструктура:</h4>
        				<ul>
        					<li>
        						<input class="form-checkbox" id="check-f-1" type="checkbox" name="facilities" checked>       		
@@ -55,7 +57,7 @@
        				</ul>
        			</fieldset>
        			<fieldset class="options">
-       				<h2 class="filter-title">Тип жилья:</h2>
+       				<h4 class="filter-title">Тип жилья:</h4>
        				<ul>
        					<li>
        						<input class="form-checkbox" id="check-h-1" type="checkbox" name="housing" checked>       		
@@ -72,7 +74,7 @@
        				</ul>
        			</fieldset>
        			<div class="filter-cost">
-       				<h2>Стоимость в сутки (Р):</h2>
+       				<h4>Стоимость в сутки (Р):</h4>
        				<div class="cost-input">
        					<label>от<input class="cost-input-min" type="text" name="cost-from" value="0"></label>
        					<label>до<input class="cost-input-max" type="text" name="cost-to" value="3000"></label>
@@ -90,8 +92,8 @@
 
        	<!-- begin search-results  -->
        	<header class="search-results">
-			<h2 class="catalog-column-left">Найдено: 3</h2>
-        	<div class="sort-type catalog-column-middle">
+			    <h2 class="catalog-list-item">Найдено: 3</h2>
+        	<div class="sort-type catalog-list-item">
          		<ul>
           			<li class="sort-title">Сортировка:</li>
            			<li><a class="active" href="#">по цене</a></li>
@@ -99,7 +101,7 @@
             		<li><a href="#">по рейтингу</a></li>
           		</ul>
         	</div>
-       		<div class="sort-order catalog-column-right">
+       		<div class="sort-order catalog-list-item">
          		<a class="icon-up" href="#"></a>
          		<a class="icon-down active" href="#"></a>
         	</div>	
@@ -108,13 +110,12 @@
 
 		<!-- begin main  -->
         <main>
-
         	<!-- begin catalog-list-item 1  -->
-          	<article class="catalog-list-item">
-        		<div class="catalog-column-left">
+          	<article class="catalog-list">
+        		<div class="catalog-list-item">
         			<img src="img/cl-1.jpg" alt="Amara Resort &amp; Spa" width="135" height="90">
         		</div>
-        		<div class="catalog-column-middle">
+        		<div class="catalog-list-item">
         			<h1 class="catalog-list-title"><a href="#">Amara Resort &amp; Spa</a></h1>
         			<div class="catalog-list-action"> Гостиница
               			<a href="#" class="btn">Подробнее</a>
@@ -123,22 +124,22 @@
               			<a href="#" class="btn btn-order">Забронировать</a>
             		</div>
 	      		</div>
-        		<div class="catalog-column-right">
-        			<div class="raiting four"></div>
+        		<div class="catalog-list-item">
+        			<div class="raiting"></div>
         			<div class="plug"></div>
         			<div class="rating-value">Рейтинг:
               			<span>8,5</span>
               		</div>	
         		</div>
         	</article>
-			<!-- end catalog-list-item 1 -->
+			    <!-- end catalog-list-item 1 -->
 
         	<!-- begin catalog-list-item 2  -->
-        	<article class="catalog-list-item">
-        		<div class="catalog-column-left">
+        	<article class="catalog-list">
+        		<div class="catalog-list-item">
         			<img src="img/cl-2.jpg" alt="Desert Quail Inn" width="135" height="90">
         		</div>
-        		<div class="catalog-column-middle">
+        		<div class="catalog-list-item">
         			<h1 class="catalog-list-title"><a href="#">Desert Quail Inn</a></h1>
         			<div class="catalog-list-action"> Гостиница
               			<a href="#" class="btn">Подробнее</a>
@@ -147,8 +148,8 @@
               			<a href="#" class="btn btn-order">Забронировать</a>
             		</div>
 	      		</div>
-        		<div class="catalog-column-right">
-        			<div class="raiting two"></div>
+        		<div class="catalog-list-item">
+        			<div class="raiting"></div>
         			<div class="plug"></div>
         			<div class="rating-value">Рейтинг:
               			<span>8,9</span>
@@ -158,11 +159,11 @@
         	<!-- end catalog-list-item 2 -->
 
         	<!-- begin catalog-list-item 3  -->
-        	<article class="catalog-list-item">
-        		<div class="catalog-column-left">
+        	<article class="catalog-list">
+        		<div class="catalog-list-item">
         			<img src="img/cl-3.jpg" alt="Villas at Poco Diablo" width="135" height="90">
         		</div>
-        		<div class="catalog-column-middle">
+        		<div class="catalog-list-item">
         			<h1 class="catalog-list-title"><a href="#">Villas at Poco Diablo</a></h1>
         			<div class="catalog-list-action"> Гостиница
               			<a href="#" class="btn">Подробнее</a>
@@ -171,32 +172,34 @@
               			<a href="#" class="btn btn-order">Забронировать</a>
             		</div>
 	      		</div>
-        		<div class="catalog-column-right">
-        			<div class="raiting three"></div>
+        		<div class="catalog-list-item">
+        			<div class="raiting"></div>
         			<div class="plug"></div>
         			<div class="rating-value">Рейтинг:
               			<span>9,2</span>
               		</div>	
         		</div>
         	</article>
-			<!-- end catalog-list-item 3 -->
+			    <!-- end catalog-list-item 3 -->
 
 		</main>
-        <!-- end main -->
-
+    <!-- end main -->
+                                                                                      
 		<!-- begin footer  -->
         <footer class="main-footer">
-            <div class="footer-hashtag column"> <a href="#">#visitsedona</a> </div>
-            <div class="footer-socials  column">
+            <div class="footer-hashtag"> <a href="#">#visitsedona</a> </div>
+            <div class="footer-socials">
                 <ul>
                     <li><a href="#">Twitter</a></li>
                     <li><a href="#">Facebook</a></li>
                     <li><a href="#">Youtube</a></li>
                 </ul>
             </div>
-            <div  class="footer-copyright column">
-            	<span>website by</span>
-            	<a href="https://htmlacademy.ru/">logo-htmlacademy</a>
+            <div  class="footer-copyright">
+                <a href="https://htmlacademy.ru/">
+                <span>website</span>
+                <div class="ha-logo">by logo-htmlacademy</div>
+              </a>
             </div>
         </footer>
         <!-- end footer -->
