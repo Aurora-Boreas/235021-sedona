@@ -14,7 +14,6 @@
     <div class="main-container">
         <!-- begin header  -->
         <header class="main-header">
-        	 <a class="logo" href="index.html"><img src="img/logo.png" alt="City of Sedona"></a>
             <!-- begin nav  -->
             <nav class="main-navigation">
                 <ul>
@@ -25,6 +24,9 @@
                 </ul>
             </nav>
             <!-- end nav -->
+            <div class="img-logo">
+            	<a class="logo" href="index.html"><img src="img/logo.png" alt="City of Sedona"></a>
+            </div>
         </header>
         <!-- end header -->
 
@@ -34,14 +36,14 @@
             <section class="main-poster"> 
             	<img src="img/main-poster.jpg" alt="Welcome to the gorgeous Sedona" width="1200" height="501">
                 <div class="slogan slogan-welcome">Welcome to the gorgeous</div>
-                <div class="slogan slogan-sedona">Sedona</div>
+                <h1>Sedona</h1>
                 <blockquote class="slogan slogan-quote">Because the Grand Canyon sucks!</blockquote>
             </section>
             <!-- end main-poster -->
 
             <!-- begin intro  -->
             <section class="intro">
-                <h1>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h1>
+                <h2>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
                 <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
             </section>
             <!-- end intro -->
@@ -50,7 +52,7 @@
             <section class="features">
                 <div class="features-content" >
                 	<h2>Настоящий городок</h2>
-                	<span>&mdash;&nbsp;&#8470;1&nbsp;&mdash;</span>
+                	<span>&mdash; &#8470;1 &mdash;</span>
                 	<p>Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <div class="features-content"> 
@@ -67,13 +69,12 @@
                 </div>
                 <div class="description-content">
                 	<h2>Еда</h2>
-                	<p>Всегда заказывайте фирменный бургер, Вы&nbsp;не&nbsp;разочаруетесь!</p>
+                	<p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                 </div>
                 <div class="description-content">
                 	<h2>Сувениры</h2>
-                	<p>Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
+                	<p>Не только китайского, но и местного производства!</p>
                 </div>
-                
             </section>
             <!-- end description 1 -->
 
@@ -84,7 +85,7 @@
                 </div>
                 <div class="features-content"> 
                 	<h2>Там есть мост дьявола</h2>
-                	<span>&mdash;&nbsp;&#8470;2&nbsp;&mdash;</span>
+                	<span>&mdash; &#8470;2 &mdash;</span>
                 	<p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
                 </div>
             </section>
@@ -94,17 +95,17 @@
             <section class="description">
                 <div class="description-content" >
                     <h2>Небольшая площадь</h2>
-                    <span>&mdash;&nbsp;&#8470;3&nbsp;&mdash;</span>
+                    <span>&mdash; &#8470;3 &mdash;</span>
                     <p>Все достопримечательности находятся очень близко</p>
                 </div>
                 <div class="description-content">
                     <h2>Красивая дорога</h2>
-                    <span>&mdash;&nbsp;&#8470;4&nbsp;&mdash;</span>
+                    <span>&mdash; &#8470;4 &mdash;</span>
                     <p>Ехать в Cедону из Лас-Вегаса совсем не скучно!</p>
                 </div>
                 <div class="description-content">
                      <h2>Мало туристов</h2>
-                     <span>&mdash;&nbsp;&#8470;5&nbsp;&mdash;</span>
+                     <span>&mdash; &#8470;5 &mdash;</span>
                      <p>Большинство едет в Гранд Каньон и толпится там</p>
                  </div>
             </section>
@@ -114,18 +115,23 @@
             <section class="choose-hotel">
                 <h3>Заинтересовались?</h3>												
                 <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-                <a href="#">Поиск гостиницы в Седоне</a>
+            </section>
+            <!-- end choose-hotel -->
+
+            <!-- begin popup  -->
+            <section class="popup">   
+                <h2>Поиск гостиницы в Седоне</h2>
 				<div class="choose-hotel-popup">
 					<form class="form" action="/search" method="post">
 						<fieldset class="form-row">
 							<label class="form-label" for="date-in">Дата заезда:</label>
 							<input class="form-input-date" type="date" name="date-in" id="date-in" value="2014-04-24">						
-							<span class="icon-calendar"></span>
+							<a href="#" class="icon-calendar"></a>
 						</fieldset>
 						<fieldset class="form-row">
 							<label class="form-label" for="date-out">Дата выезда:</label>
 							<input class="form-input-date" type="date" name="date-out" id="date-out" value="2014-07-04">						
-							<span class="icon-calendar"></span>
+							<a href="#" class="icon-calendar"></a>
 						</fieldset>
 						<fieldset class="form-row">
 							<fieldset class="counter">
@@ -141,11 +147,11 @@
 								<button class="icon-plus" type="button"></button>
 							</fieldset>
 						</fieldset>
+						<input class="btn" type="submit" value="Найти">
 					</form>	
-					<a href="#" class="btn btn-find">Найти</a>
 				</div>
             </section>
-            <!-- end choose-hotel -->
+            <!-- end popup -->
 
             <!-- begin map  -->
             <section class="map">
@@ -167,8 +173,8 @@
             </div>
             <div  class="footer-copyright">
                	<a href="https://htmlacademy.ru/">
-            		<span>website</span>
-            		<div class="ha-logo">by logo-htmlacademy</div>
+            		<span>website by</span>
+            		<div class="author-copyright">html academy</div>
             	</a>
             </div>
         </footer>
