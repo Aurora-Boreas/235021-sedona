@@ -13,6 +13,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #000000;
 }
 
 .main-container {
@@ -47,7 +48,6 @@ a {
     line-height: 26px;
     font-weight: 700;
     text-align: center;
-    color: #000000;
 }
 
 .main-header a:nth-of-type(2) {
@@ -96,7 +96,6 @@ a {
     margin-right: auto;
     margin-bottom: 56px;
     margin-left: auto;
-    width: 490px;
     line-height: 24px;
     text-align: center;
 }
@@ -117,16 +116,11 @@ intro > h2 {
 }
 
 .features-content {
-    display: block;
     text-align: center;
 }
 
 .features-content > h2 {
     margin-top: 53px
-}
-
-.features-content p {
-    padding: 0 14%
 }
 
 img .features-content {
@@ -135,18 +129,16 @@ img .features-content {
 
 .advantages {
     display: flex;
+    justify-content: center;
 }
 
 .advantages-item {
-    display: block;
+    flex-grow: 1;
     text-align: center;
 }
 
 .choose-hotel {
     margin-top: 57px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 434px;
     line-height: 24px;
     text-align: center;
 }
@@ -161,20 +153,27 @@ img .features-content {
 }
 
 .choose-hotel a {
-    margin-bottom: 0;
+    width: 568px;
+    margin: 0 auto;
     font-size: 21px;
     font-weight: 700;
-    position: relative;
-    z-index: 2;
     display: block;
     padding: 30px;
-    font-size: 21px;
     background-color: #766357;
     color: #ffffff;
 }
 
+.popup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*.popup  form{width: 568px; margin: 0 auto; padding: 55px; }*/
+
 .popup .form-row {
-    margin-left: 56px;
     margin-bottom: 30px;
     padding: 0;
     border: none;
@@ -183,10 +182,9 @@ img .features-content {
     text-align: left;
 }
 
-.form .form-label {
+.form-label {
     display: inline-block;
     vertical-align: middle;
-    width: 115px;
     font-size: 14px;
     line-height: 41px
 }
@@ -215,24 +213,21 @@ button.icon-plus {
     text-align: center;
 }
 
-.form-input-counter {
-    color: #000000;
-}
-
 .btn {
     width: 458px;
     height: 58px;
     background-color: #82b5d3;
     font-size: 21px;
     font-weight: 700;
-    line-height: 26px;
     text-transform: uppercase;
     color: #ffffff;
+    border: none;
 }
 
 .popup iframe {
     width: 100%;
     height: 593px;
+    border: none;
 }
 
 .main-footer {
@@ -261,4 +256,92 @@ button.icon-plus {
     display: inline-block;
     vertical-align: top;
     margin: 6px 3px
+}
+
+.filters {
+    background-image: url("../img/bg-hotels-filters.jpg");
+    background-repeat: no-repeat;
+}
+
+.filters-row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 31px 72px;
+}
+
+.search-results {
+    display: flex;
+    align-items: center;
+    padding-left: 72px;
+    padding-right: 72px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.search-results ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.search-results li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px 3px
+}
+
+.catalog-list {
+    padding-left: 72px;
+    padding-right: 72px;
+    display: flex;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-photo {
+    padding-right: 30px;
+}
+
+.catalog-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-item >h1 {
+    margin: 0;
+    width: 100%;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.catalog-action {
+    display: flex;
+    flex-direction: row;
+}
+
+.catalog-action-detailed {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-action-detailed >.btn {
+    width: 110px;
+    height: 27px;
+    margin-right: 6px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.catalog-action-detailed >.btn-order {
+    width: 142px;
+    background-color: #766357;
+}
+
+.catalog-raiting {
+    flex-grow: 2;
+    text-align: right
 }

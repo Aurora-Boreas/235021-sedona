@@ -14,12 +14,10 @@
         <header class="main-header">
             <!-- begin nav  -->
             <nav class="main-navigation">
-                <ul>
-                    <li><a href="#">Информация</a></li>
-                    <li><a href="#">Фото и видео</a></li>
-                    <li><a href="#">Карта штата</a></li>
-                    <li><a href="hotels.html">Гостиницы</a></li>
-                </ul>
+                <a href="#">Информация</a>
+				<a href="#">Фото и видео</a>
+				<a href="#">Карта штата</a>
+				<a href="hotels.html">Гостиницы</a>
             </nav>
             <!-- end nav -->
             <div class="img-logo">
@@ -30,8 +28,9 @@
         
         <!-- begin filters  -->
         <section class="filters">
-            <form class="filters row" action="/filter" method="post">
-                <fieldset class="options">
+           <!-- <form class="filters-row" -->
+			<form class="filters-row" action="https://echo.htmlacademy.ru" method="get">
+                <div class="options">
                     <h2 class="filter-title">Инфраструктура:</h2>
                     <ul>
                         <li>
@@ -47,8 +46,8 @@
                             <label class="form-label" for="check-f-3">Wi-Fi</label>
                         </li>
                     </ul>
-                </fieldset>
-                <fieldset class="options">
+                </div>
+                <div class="options">
                     <h2 class="filter-title">Тип жилья:</h2>
                     <ul>
                         <li>
@@ -64,7 +63,7 @@
                             <label class="form-label" for="check-h-3">Апартаменты</label>
                         </li>
                     </ul>
-                </fieldset>
+                </div>
                 <div class="filter-cost">
                     <h2>Стоимость в сутки (Р):</h2>
                     <div class="cost-input">
@@ -86,6 +85,7 @@
         <section class="search-results">
             <h3>Найдено: 3</h3>
             <span class="sort-type">Сортировка:</span>
+            <div class="sort-list">
                 <ul>
                     <li><a class="active" href="#">по цене</a></li>
                     <li><a href="#">по типу</a></li>
@@ -108,14 +108,16 @@
                 </div>
                 <div class="catalog-item">
                     <h1><a href="#">Amara Resort &amp; Spa</a></h1>
-                    <div class="catalog-action-detailed"> 
-                        <span>Гостиница</span>
-                        <a href="#" class="btn">Подробнее</a>
-                    </div>
                     <div class="catalog-action">
-                        <span>ОТ 3500 Р.</span>
-                        <a href="#" class="btn btn-order">Забронировать</a>
-                    </div>
+	                    <div class="catalog-action-detailed"> 
+	                        <span>Гостиница</span>
+	                        <a href="#" class="btn">Подробнее</a>
+	                    </div>
+	                    <div class="catalog-action-detailed">
+	                        <span>ОТ 3500 Р.</span>
+	                        <a href="#" class="btn btn-order">Забронировать</a>
+	                    </div>
+                	</div>
                 </div>
                 <div class="catalog-raiting">
                     <div class="raiting"></div>
@@ -132,14 +134,16 @@
                 </div>
                 <div class="catalog-item">
                     <h1><a href="#">Desert Quail Inn</a></h1>
-                    <div class="catalog-action-detailed"> 
-                        <span>Мотель</span>
-                        <a href="#" class="btn">Подробнее</a>
-                    </div>
                     <div class="catalog-action">
-                        <span>ОТ 2000 Р.</span>
-                        <a href="#" class="btn btn-order">Забронировать</a>
-                    </div>
+	                    <div class="catalog-action-detailed"> 
+	                        <span>Мотель</span>
+	                        <a href="#" class="btn">Подробнее</a>
+	                    </div>
+	                    <div class="catalog-action-detailed">
+	                        <span>ОТ 2000 Р.</span>
+	                        <a href="#" class="btn btn-order">Забронировать</a>
+	                    </div>
+	                </div>    
                 </div>
                 <div class="catalog-raiting">
                     <div class="raiting"></div>
@@ -156,14 +160,16 @@
                 </div>
                 <div class="catalog-item">
                     <h1><a href="#">Villas at Poco Diablo</a></h1>
-                    <div class="catalog-action-detailed"> 
-                        <span>Гостиница</span>
-                        <a href="#" class="btn">Подробнее</a>
-                    </div>
-                    <div class="catalog-action">
-                        <span>ОТ 4000 Р.</span>
-                        <a href="#" class="btn btn-order">Забронировать</a>
-                    </div>
+					<div class="catalog-action">
+	                    <div class="catalog-action-detailed"> 
+	                        <span>Гостиница</span>
+	                        <a href="#" class="btn">Подробнее</a>
+	                    </div>
+	                    <div class="catalog-action-detailed">
+	                        <span>ОТ 4000 Р.</span>
+	                        <a href="#" class="btn btn-order">Забронировать</a>
+	                    </div>
+	                </div>    
                 </div>
                 <div class="catalog-raiting">
                     <div class="raiting"></div>
