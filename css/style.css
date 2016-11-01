@@ -16,6 +16,10 @@ a {
     color: #000000;
 }
 
+h2 {
+    margin: 0;
+}
+
 .main-container {
     width: 1200px;
     margin: 0 auto;
@@ -37,13 +41,14 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 72px;
-    margin-right: 72px;
+    /* margin-left: 72px;
+    margin-right: 72px;*/
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-.main-header a {
+.main-navigation >a {
+    width: 20%;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
@@ -51,7 +56,12 @@ a {
 }
 
 .main-header a:nth-of-type(2) {
-    margin-right: 240px;
+    text-align: left;
+    margin-right: 15px;
+}
+
+.main-header a:nth-of-type(3) {
+    text-align: right;
 }
 
 .main-header .logo {
@@ -92,20 +102,19 @@ a {
 }
 
 .intro {
-    margin-top: 61px;
-    margin-right: auto;
-    margin-bottom: 56px;
-    margin-left: auto;
+    padding-top: 61px;
+    padding-bottom: 38px;
+    padding-left: 355px;
+    padding-right: 355px;
     line-height: 24px;
     text-align: center;
 }
 
-intro > h2 {
-    margin: 28px auto;
+.intro >h2 {
+    margin-bottom: 28px;
 }
 
 .intro p {
-    margin-top: 27px;
     font-size: 14px;
 }
 
@@ -116,15 +125,29 @@ intro > h2 {
 }
 
 .features-content {
+    height: 256px;
+    overflow: hidden;
     text-align: center;
 }
 
-.features-content > h2 {
-    margin-top: 53px
+.features-content >h2 {
+    margin-top: 53px;
+    margin-left: 90px;
+    margin-right: 90px;
+    line-height: 21px;
 }
 
-img .features-content {
-    order: -1;
+.features-content p {
+    /*  margin-left: 60px;
+    margin-right: 60px; */
+}
+
+.features-content >img {
+    /*! order: -1; */
+    margin-top: -72px;
+    margin-right: 45px;
+    min-width: 100%;
+    /*! height: auto; */
 }
 
 .advantages {
@@ -139,6 +162,8 @@ img .features-content {
 
 .choose-hotel {
     margin-top: 57px;
+    padding-left: 316px;
+    padding-right: 316px;
     line-height: 24px;
     text-align: center;
 }
@@ -146,10 +171,13 @@ img .features-content {
 .choose-hotel > h3 {
     font-size: 30px;
     font-weight: 700;
+    margin-bottom:
 }
 
 .choose-hotel p {
-    margin-bottom: 52px;
+    margin-left: 67px;
+    margin-right: 67px;
+    margin-bottom: 48px;
 }
 
 .choose-hotel a {
@@ -170,16 +198,27 @@ img .features-content {
     align-items: center;
 }
 
-
-/*.popup  form{width: 568px; margin: 0 auto; padding: 55px; }*/
+.popup form {
+    width: 568px;
+    margin: 0 auto;
+    padding: 55px;
+}
 
 .popup .form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 30px;
     padding: 0;
     border: none;
-    font-size: 0;
     font-weight: 700;
     text-align: left;
+}
+
+.form-row >input {
+    border: none;
+    color: #ababab;
+    background-color: #f2f2f2;
 }
 
 .form-label {
@@ -193,11 +232,13 @@ img .features-content {
     width: 343px;
     height: 38px;
     padding-left: 15px;
-    padding-right: 38px;
+    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .counter {
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
     width: 49%;
     border: none;
 }
@@ -209,7 +250,7 @@ button.icon-plus {
     width: 38px;
     border: none;
     color: #ababab;
-    background: #f2f2f2;
+    background-color: #f2f2f2;
     text-align: center;
 }
 
@@ -228,6 +269,7 @@ button.icon-plus {
     width: 100%;
     height: 593px;
     border: none;
+    background-image: url(../img/map.png);
 }
 
 .main-footer {
@@ -269,6 +311,10 @@ button.icon-plus {
     flex-direction: row;
     justify-content: space-between;
     padding: 31px 72px;
+}
+
+.filter-title h2 {
+    font-size: 21px;
 }
 
 .search-results {
