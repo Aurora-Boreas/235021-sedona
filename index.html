@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
-
-<head>
+<html class="" lang="ru"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Седона</title>
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'> 
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css"> 
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
@@ -38,35 +37,35 @@
 
 			<!-- begin intro  -->
 			<section class="intro">
-				<h2>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+				<h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
 				<p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
 			</section>
 			<!-- end intro -->
 
 			<!-- begin features 1 -->
 			<section class="features">
-				<div class="features-content" >
+				<div class="features-content reasons">
 					<h2>Настоящий городок</h2>
-					<span>&mdash; &#8470;1 &mdash;</span>
+					<span>— №1 —</span>
 					<p>Седона не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
 				<div class="features-content"> 
-					<img src="img/photo-r1.jpg" alt="Настоящий городок" width="800" height="400">
+					<img src="img/photo-r1.jpg" alt="Настоящий городок" width="800" height="256">
 				</div>
 			</section>
 			<!-- end features 1  -->
 
 			<!-- begin advantages 1 -->
 			<section class="advantages">
-				<div class="advantages-item">
+				<div class="advantages-item advantages-item-housing">
 					<h2>Жилье</h2>
 					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</div>
-				<div class="advantages-item">
+				<div class="advantages-item advantages-item-food">
 					<h2>Еда</h2>
 					<p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
 				</div>
-				<div class="advantages-item">
+				<div class="advantages-item advantages-item-souvenirs">
 					<h2>Сувениры</h2>
 					<p>Не только китайского, но и местного производства!</p>
 				</div>
@@ -76,11 +75,11 @@
 			<!-- begin features 2 -->
 			<section class="features">
 				<div class="features-content">
-					<img src="img/photo-r2.jpg" width="800" height="400" alt="Мост дьявола">
+					<img src="img/photo-r2.jpg" alt="Мост дьявола" width="800" height="256">
 				</div>
-				<div class="features-content"> 
+				<div class="features-content reasons"> 
 					<h2>Там есть мост дьявола</h2>
-					<span>&mdash; &#8470;2 &mdash;</span>
+					<span>— №2 —</span>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
 			</section>
@@ -88,19 +87,19 @@
 
 			<!-- begin advantages 2 -->
 			<section class="advantages">
-				<div class="advantages-item" >
+				<div class="advantages-item reasons">
 					<h2>Небольшая площадь</h2>
-					<span>&mdash; &#8470;3 &mdash;</span>
+					<span>— №3 —</span>
 					<p>Все достопримечательности находятся очень близко</p>
 				</div>
-				<div class="advantages-item">
+				<div class="advantages-item reasons">
 					<h2>Красивая дорога</h2>
-					<span>&mdash; &#8470;4 &mdash;</span>
+					<span>— №4 —</span>
 					<p>Ехать в Cедону из Лас-Вегаса совсем не скучно!</p>
 				</div>
-				<div class="advantages-item">
+				<div class="advantages-item reasons">
 					 <h2>Мало туристов</h2>
-					 <span>&mdash; &#8470;5 &mdash;</span>
+					 <span>— №5 —</span>
 					 <p>Большинство едет в Гранд Каньон и толпится там</p>
 				 </div>
 			</section>
@@ -117,34 +116,34 @@
 			<!-- begin popup  -->
 			<section class="popup">   
 				<form class="form-popup" action="https://echo.htmlacademy.ru" method="get">
-						<fieldset class="form-row">
+						<div class="form-row"> <!-- заменила fieldset на div, т.к. в Хроме ломается форма -->
 							<label class="form-label" for="date-in">Дата заезда:</label>
-							<input class="form-input-date" type="date" name="date-in" id="date-in" value="2014-04-24">                      
+							<input class="form-input-date" name="date-in" id="date-in" value="24 АПРЕЛЯ 2016" type="date">                      
 							<a href="#" class="icon-calendar"></a>
-						</fieldset>
-						<fieldset class="form-row">
+						</div>
+						<div class="form-row">
 							<label class="form-label" for="date-out">Дата выезда:</label>
-							<input class="form-input-date" type="date" name="date-out" id="date-out" value="2014-07-04">                        
+							<input class="form-input-date" name="date-out" id="date-out" value="04 ИЮЛЯ 2016" type="date">                        
 							<a href="#" class="icon-calendar"></a>
-						</fieldset>
-						<fieldset class="form-row">
-							<fieldset class="counter">
+						</div>
+						<div class="form-row">
+							<div class="counter">
 								<label class="form-label" for="counter-adult">Взрослые:</label>
 								<button class="icon-minus" type="button"></button>
-								<input class="form-input-counter" type="text" name="counter-adult" id="counter-adult" value="2">                        
+								<input class="form-input-counter" name="counter-adult" id="counter-adult" value="2" type="text">                        
 								<button class="icon-plus" type="button"></button>
-							</fieldset>
+							</div>
 						
-							<fieldset class="counter">
+							<div class="counter">
 								<label class="form-label" for="counter-children">Дети:</label>
 								<button class="icon-minus" type="button"></button>
-								<input class="form-input-counter" type="text" name="counter-children" id="counter-children" value="0">                      
+								<input class="form-input-counter" name="counter-children" id="counter-children" value="0" type="text">                      
 								<button class="icon-plus" type="button"></button>
-							</fieldset>
-						</fieldset>
-					<input class="btn" type="submit" value="Найти">
+							</div>
+						</div>
+					<input class="btn" value="Найти" type="submit">
 				</form> 
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d839471.5226392496!2d-112.0585197!3d34.7257149!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1477220779942" allowfullscreen>
+				<iframe src="https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d839471.5226392496%212d-112.0585197%213d34.7257149%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x872da132f942b00d%3A0x5548c523fa6c8efd%212z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ%215e0%213m2%211sru%212sru%214v1477220779942" allowfullscreen="">
 				</iframe>	  
 			</section>
 
@@ -156,19 +155,17 @@
 		<footer class="main-footer">
 			<div class="footer-hashtag"> <a href="#">#visitsedona</a> </div>
 			<div class="footer-socials">
-				<ul>
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Youtube</a></li>
-				</ul>
-			</div>
-			<div  class="footer-copyright">
+				<a class="social-btn social-btn-tw" href="#">Twitter</a>
+				<a class="social-btn social-btn-fb" href="#">Facebook</a>
+				<a class="social-btn social-btn-yt" href="#">Youtube</a>
+		        </div>
+			<div class="footer-copyright">
 				<span>website by</span>
-				<a href="https://htmlacademy.ru/" alt="HTML Academy"></a>
+				<a href="https://htmlacademy.ru/" alt="HTML Academy" cc1f08739="true"></a>
 			</div>
 		</footer>
 		<!-- end footer -->
 	</div>
-</body>
 
-</html>
+
+</body></html>
