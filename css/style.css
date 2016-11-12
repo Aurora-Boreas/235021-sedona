@@ -58,13 +58,14 @@ a {
 }
 
 .main-container {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    	-ms-flex-direction: column;
-    		flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 1200px;
     margin: 0 auto;
     background: #ffffff;
@@ -75,14 +76,14 @@ a {
     position: relative;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    	-ms-flex-direction: row;
-    		flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-    	-ms-flex-pack: justify;
-    		justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: stretch;
-    	-ms-flex-align: stretch;
-    		align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
 }
 
 .main-navigation {
@@ -91,13 +92,13 @@ a {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    	-ms-flex-direction: row;
-    		flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-   		flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
-   		-ms-flex-pack: justify;
-    	justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -196,8 +197,8 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
-    	-ms-flex-pack: start;
-    		justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     width: 100%;
     background-color: #82b5d3;
     color: #ffffff;
@@ -236,8 +237,8 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-  	  -ms-flex-pack: center;
-   		  justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .advantages-item {
@@ -332,29 +333,29 @@ a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-   		-ms-flex-direction: column;
-    		flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
     -webkit-box-align: center;
-    	-ms-flex-align: center;
-    		align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .form-popup {
     content: "";
     position: absolute;
     display: none;
-    z-index: 1;
+    z-index: 5;
     left: 50%;
     top: 0;
     width: 568px;
     margin-left: -284px;
     padding: 55px;
-    box-shadow: 0 10px 15px 0 #dfdfdf;
+    box-shadow: 0 10px 15px 0 rgba( 0, 0, 0, .15);
     background-color: #ffffff;
     -webkit-transform-origin: top;
-    	-ms-transform-origin: top;
-    		transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
 }
 
 .form-popup-show {
@@ -370,11 +371,11 @@ a {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    	-ms-flex-direction: row;
-    		flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: end;
-    	-ms-flex-pack: end;
-    		justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     margin-bottom: 26px;
     font-weight: 700;
     font-size: 14px;
@@ -434,8 +435,8 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    	-ms-flex-pack: justify;
-    		justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     border: none;
 }
 
@@ -452,7 +453,6 @@ a {
 button.icon-minus,
 button.icon-plus {
     width: 38px;
-    min-height: 34px;
     border: none;
     color: #000000;
     background-color: #f2f2f2;
@@ -511,8 +511,10 @@ button.icon-plus:active {
 }
 
 .popup iframe {
+    position: relative;
+    z-index: 1;
     width: 100%;
-    min-height: 473px;
+    min-height: 593px;
     border: none;
     background: #81b3d2 url(../img/map.png) no-repeat;
 }
@@ -523,17 +525,27 @@ button.icon-plus:active {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    	-ms-flex-direction: row;
-    		flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-    	-ms-flex-pack: justify;
-    		justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-    	-ms-flex-align: center;
-    		align-items: center;
-    padding-top: 36px;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 37px;
     padding-bottom: 36px;
     text-align: center;
+    background-color: #ffffff;
+}
+
+.footer-map {
+    position: absolute;
+    z-index: 3 ;
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    opacity: 0.9;
 }
 
 .main-footer .footer-hashtag {
@@ -553,7 +565,7 @@ button.icon-plus:active {
     width: 46px;
     padding-top: 14px;
     padding-bottom: 13px;
-    margin-right: 3px;
+    margin-right: 2px;
     font-size: 0;
     background-color: #81b3d2;
 }
@@ -650,11 +662,11 @@ button.icon-plus:active {
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    	-ms-flex-direction: row;
-    		flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: start;
-    	-ms-flex-pack: start;
-    		justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
 }
 
 .options >h2,
@@ -739,6 +751,7 @@ input.form-checkbox {
     border-radius: 2px;
     font-size: 0;
     background-color: transparent;
+    
 }
 
 .cost-input::before {
@@ -774,6 +787,7 @@ input.form-checkbox {
     background: none;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 .cost-input input {
@@ -850,8 +864,8 @@ input.form-checkbox {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    	-ms-flex-align: center;
-    		align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding-top: 12px;
     padding-right: 72px;
     padding-left: 72px;
@@ -936,11 +950,11 @@ input.form-checkbox {
 }
 
 .icon-up:hover {
-    background-position: -2px -69px;
+    background-position: -2px -68px;
 }
 
 .icon-up:active {
-    background-position: -2px -98px;
+    background-position: -2px -96px;
 }
 
 .icon-up .active {
@@ -986,8 +1000,8 @@ input.form-checkbox {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    	-ms-flex-pack: justify;
-    		justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1002,7 +1016,7 @@ input.form-checkbox {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    	flex-wrap: wrap;
+    flex-wrap: wrap;
     min-height: 90px;
 }
 
@@ -1028,8 +1042,8 @@ input.form-checkbox {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    	-ms-flex-direction: row;
-    		flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
 }
 
 .catalog-action-detailed {
@@ -1038,8 +1052,8 @@ input.form-checkbox {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    	-ms-flex-direction: column;
-    		flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .catalog-action-detailed span {
@@ -1089,14 +1103,14 @@ input.form-checkbox {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    	-ms-flex-direction: column;
-    		flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-    	-ms-flex-pack: justify;
-    		justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: end;
-    	-ms-flex-align: end;
-    		align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     width: 182px;
     padding-right: 72px;
     margin-top: -6px;
