@@ -138,7 +138,7 @@ a {
 
 .main-header .logo {
     position: absolute;
-    z-index: 1;
+    z-index: 20;
     top: 0px;
     left: 50%;
     width: 138px;
@@ -147,6 +147,7 @@ a {
 
 .main-poster {
     position: relative;
+    z-index: 1;
     min-height: 509px;
     background: #3d4c57 url(../img/main-poster.jpg) no-repeat 50% 28%;
     background-size: cover;
@@ -155,7 +156,7 @@ a {
 .main-poster::after {
     content: "";
     position: absolute;
-    z-index: 2;
+    z-index: 20;
     left: 0;
     right: 0;
     bottom: 0;
@@ -167,7 +168,7 @@ a {
 .main-poster-slogan {
     content: "";
     position: absolute;
-    z-index: 1;
+    z-index: 20;
     top: 76px;
     left: 50%;
     margin-left: -229px;
@@ -1144,7 +1145,7 @@ input.form-checkbox {
 }
 
 .catalog-raiting span {
-    width: 103px;
+    min-width: 103px;
     margin-bottom: 5px;
     padding-top: 5px;
     padding-right: 12px;
