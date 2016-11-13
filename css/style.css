@@ -163,6 +163,7 @@ a {
     height: 57px;
     background: transparent url(../img/main-poster-mask.png) no-repeat 0 50%;
     background-size: 100% 57px;
+    border-bottom: none;
 }
 
 .main-poster-slogan {
@@ -213,9 +214,9 @@ a {
 
 .reasons h2 {
     margin-top: 0;
-    margin-right: auto;
+    margin-right: 120px;
     margin-bottom: 25px;
-    margin-left: auto;
+    margin-left: 120px;
     width: 160px;
 }
 
@@ -564,6 +565,7 @@ button.icon-plus:active {
     position: relative;
     vertical-align: top;
     width: 46px;
+    min-height: 48px;
     padding-top: 14px;
     padding-bottom: 13px;
     margin-right: 2px;
