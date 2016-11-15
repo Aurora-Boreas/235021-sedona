@@ -56,6 +56,12 @@ a {
     color: #000000;
 }
 
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
 .main-container {
     position: relative;
     display: -webkit-box;
@@ -99,20 +105,31 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
+}
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0
+}
+
+.main-navigation li {
+    display: inline-block;
+    vertical-align: top; 
+    width: 240px;
+    text-align: center;
+}
+
+.main-navigation li:nth-of-type(2) {
+    margin-right: 240px;
 }
 
 .main-navigation a {
-    width: 240px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
-    text-align: center;
     color: #000000;
-}
-
-.main-navigation a:nth-of-type(2) {
-    margin-right: 240px;
 }
 
 .main-navigation a:hover {
@@ -375,20 +392,27 @@ a {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row;
+     flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
     margin-bottom: 26px;
+    width: 458px;
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
+    text-align: left;
 }
 
 .form-label {
+    display: inline-block;
     vertical-align: middle;
     line-height: 41px;
     margin-right: auto;
+    width: 112px;
+    font-size: 14px;
 }
 
 .form-row >input {
@@ -437,19 +461,19 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     border: none;
 }
 
 .counter:first-of-type {
     width: 226px;
-    margin-right: 53px;
 }
 
-.counter:last-of-type {
-    width: 179px;
+.counter .form-label[for='counter-children'] {
+    width: 65px;
+    margin-left: 50px;
 }
 
 .form-input-counter,
@@ -555,6 +579,7 @@ button.icon-plus:active {
     width: 33.33%;
     font-size: 21px;
     font-weight: bold;
+    margin-top: -2px;
 }
 
 .main-footer .footer-socials {
@@ -652,7 +677,7 @@ button.icon-plus:active {
 }
 
 .filters {
-    padding-top: 28px;
+    padding-top: 27px;
     padding-bottom: 7px;
     color: #ffffff;
     background: #46525c url(../img/bg-hotels-filters.jpg) no-repeat 0 50%;
@@ -873,7 +898,7 @@ input.form-checkbox {
     padding-top: 12px;
     padding-right: 72px;
     padding-left: 72px;
-    padding-bottom: 12px;
+    padding-bottom: 11px;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1061,11 +1086,13 @@ input.form-checkbox {
 }
 
 .catalog-action-detailed span {
+    display: block;
     padding-top: 0px;
     padding-bottom: 13px;
 }
 
 .catalog-action-detailed >.btn {
+    display: block;
     width: 110px;
     margin-right: 6px;
     padding-top: 3px;

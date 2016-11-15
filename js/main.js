@@ -8,7 +8,6 @@
     
     var popup = document.querySelector(".form-popup");
     popup.classList.toggle("form-popup-show");
-    date_in.focus();
   });
 
   popup.addEventListener("submit", function(event) {
